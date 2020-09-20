@@ -558,6 +558,7 @@
                 type="email"
                 name="footer-form-email"
                 id="footer-form-email"
+                class="footer-form-input"
                 placeholder="E-mail"
                 required
               />
@@ -590,28 +591,49 @@
             <div class="form-field">
               <label for="name">Имя</label>
               <div class="field-input">
+                <input
+                  type="text"
+                  class="form-input"
+                  name="name"
+                  id="name"
+                  placeholder=" "
+                  required
+                />
                 <svg class="modal-icon icon-name">
                   <use href="./icons/sprite.svg#icon-person-black"></use>
                 </svg>
-                <input type="text" name="name" id="name" required />
               </div>
             </div>
             <div class="form-field">
               <label for="tel">Телефон</label>
               <div class="field-input">
+                <input
+                  class="form-input"
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder=" "
+                  required
+                />
                 <svg class="modal-icon icon-phone">
                   <use href="./icons/sprite.svg#icon-phone-black"></use>
                 </svg>
-                <input type="tel" name="tel" id="tel" required />
               </div>
             </div>
             <div class="form-field">
               <label for="email">Почта</label>
               <div class="field-input">
+                <input
+                  type="email"
+                  class="form-input"
+                  name="email"
+                  id="email"
+                  placeholder=" "
+                  required
+                />
                 <svg class="modal-icon icon-email">
                   <use href="./icons/sprite.svg#icon-email-black"></use>
                 </svg>
-                <input type="email" name="email" id="email" required />
               </div>
             </div>
             <div class="form-field">
@@ -619,14 +641,20 @@
               <textarea
                 name="comment"
                 id="comment"
+                class="textarea"
                 rows="8"
                 placeholder="Введите текст"
               ></textarea>
             </div>
             <div class="form-field">
-              <input type="checkbox" name="contract" id="contract" />
-              <label for="contract"
-                >Соглашаюсь с рассылкой и принимаю Условия договора
+              <label for="checkbox" class="checkbox-label">
+                <input
+                  type="checkbox"
+                  class="checkbox visually-hidden"
+                  id="checkbox"
+                />
+                <span class="text-term">Соглашаюсь с рассылкой и принимаю</span>
+                <a href="" class="contract-terms">Условия договора</a>
               </label>
             </div>
             <button type="submit" class="button-submit modal-btn">
